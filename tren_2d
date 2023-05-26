@@ -1,0 +1,43 @@
+from tkinter import *
+
+#--------------------
+# VARIABLES GLOBALES 
+#--------------------
+
+BASE = 410
+ALTURA = 400
+
+#--------------------
+# VENTANA PRINCIPAL
+#--------------------
+
+ventana_principal = Tk()
+ventana_principal.title("Graficas 2D")
+ventana_principal.resizable(False, False)
+ventana_principal.geometry("500x500")
+ventana_principal.config(bg="LightBlue3")
+
+
+c = Canvas(ventana_principal, width=BASE, height=ALTURA)
+c.config(bg="black")
+c.place(x=45, y=50)
+
+cir_1 = c.create_oval(0,ALTURA/2+10, 0+150, ALTURA-70, fill= "black", outline ="snow")
+rect_9 = c.create_rectangle(0+70, ALTURA/2+10, 0+100, ALTURA-70, fill= "slate gray", outline ="snow")
+rect_1 = c.create_rectangle(0+90,ALTURA/2, BASE-25, ALTURA-50, fill= "gray63", outline ="snow")
+rect_2 = c.create_rectangle(BASE/2,0+80, BASE-40, ALTURA/2, fill= "gray23", outline ="snow")
+rect_3 = c.create_rectangle(BASE/2-15,0+70, BASE-25, 0+100, fill= "slate gray", outline ="snow")
+rect_4 = c.create_rectangle(BASE/2,0+70, BASE-40, 0+50, fill= "slate gray", outline ="snow")
+rect_5 = c.create_rectangle(BASE/2+30,0+190, BASE-70, 0+111, fill= "lightCyan3", outline ="snow")
+cir_1 = c.create_oval(BASE/2+100,ALTURA-100, BASE, ALTURA, fill= "black", outline ="snow")
+cir_2 = c.create_oval(BASE/2-15,ALTURA-100, BASE-110, ALTURA, fill= "black", outline ="snow")
+cir_3 = c.create_oval(0+80,ALTURA-100, BASE/2-20, ALTURA, fill= "black", outline ="snow")
+rect_6 = c.create_rectangle(0+150,ALTURA-60, BASE/2+20, ALTURA-40, fill= "brown4", outline ="snow")
+rect_7 = c.create_rectangle(BASE/2+60,ALTURA-60, BASE-70, ALTURA-40, fill= "brown4", outline ="snow")
+rect_8 = c.create_rectangle(0+35,ALTURA/2-10, 0+70, ALTURA-50, fill= "slate gray", outline ="snow")
+rect_10 = c.create_rectangle(0+120, 0+140, 0+160, ALTURA/2, fill= "gray23", outline ="snow")
+rect_11 = c.create_rectangle(0+110,0+120, 0+170, 0+140, fill= "slate gray", outline ="snow")
+
+
+
+ventana_principal.mainloop()
